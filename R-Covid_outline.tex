@@ -1,0 +1,70 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{latexsym}
+\usepackage[brazilian]{babel}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+\usepackage{graphicx}
+
+\usepackage{hyperref}
+\usepackage{amsmath}  % for equation environment
+\usepackage{enumitem} % nolistsep to reduce list spacing
+
+%opening
+\title{Apresentando R através do COVID-19: apontamentos para palestra}
+\author{Hilton Fernandes}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Appointments for an introductory lecture to R using COVID as a motivation.
+\end{abstract}
+
+\tableofcontents
+
+\section{Motivação}
+
+\section{Coletando dados de COVID-19 no Brasil}
+
+Há na Internet muitas fontes para obtenção de dados sobre a epidemia. No fundo, 
+todas elas derivam de dados fornecidos pelo Ministério da Saúde do Brasil que, 
+por sua vez, concentra dados das secretarias de saúde dos governos estaduais. 
+
+Devido a questões delicadas, que não serão comentadas aqui, em algum momento o 
+Ministério da Saúde do Brasil deixou de coletar e disponibilizar esses dados, 
+que foram então concentrados pelo consórcio de mídia:
+
+\begin{enumerate}
+    \item baixar os dados do {\tt github};
+    \item examinar o pacote de dados: 
+	\begin{enumerate}
+	    \item {\tt View()} para examinar dados;
+	    \item Contagem de linhas;
+	    \item Contagem de colunas;
+	    \item listagem de estruturas.
+	\end{enumerate}
+
+    \item selecionar apenas os dados do Brasil;
+    \item selecionar apenas os dados do começo da pandemia;
+    \item curvas para variáveis -- foco em valores acumulados, por reduzirem 
+	oscilações.
+\end{enumerate}
+
+
+\section{Aproximação por regressão linear}
+
+\section{Modelo geral de epidemias}
+\section{\texorpdfstring{A transformação {\em log-log}}
+			{A transformação log-log}
+	}
+\section{Aproximação de um modelo exponencial aos dados de COVID-19 do Brasil}
+\section{Interpretação do modelo exponencial aos dados de COVID-19 do Brasil}
+\section{\texorpdfstring{Apresentação dos recursos do $R$ que foram usados}
+			{Apresentação dos recursos do R que foram usados}
+	}
+
+
+\end{document}

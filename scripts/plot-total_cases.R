@@ -1,0 +1,1 @@
+plot(day, work$total_cases)

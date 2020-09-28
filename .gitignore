@@ -1,0 +1,10 @@
+*.aux
+*.backup
+*.dvi
+*.kilepr
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb

@@ -1,0 +1,253 @@
+\documentclass[a4paper,10pt]{beamer}
+\usepackage{latexsym}
+\usepackage[brazilian]{babel}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+\usepackage{graphicx}
+
+\usepackage{hyperref}
+\usepackage{amsmath}  % for equation environment
+% \usepackage{enumitem} % nolistsep to reduce list spacing
+\usepackage{default}
+
+\begin{document}
+
+\begin{frame}
+  \maketitle{Usando {\em R} para entender a COVID-19}
+  
+\end{frame}
+
+\section{Introdução}
+
+\begin{frame}{Agenda}
+ \tableofcontents
+\end{frame}
+
+\begin{frame}{O impacto da COVID-19}
+  \begin{itemize}
+      \item O impacto da pandemia COVID-19 talvez seja ainda maior do que de 
+	  outras pandemias;
+      \item Talvez seja maior do que aquele da Peste Negra da Idade Média;
+      \item Talvez seja ainda maior do que a pandemia da chamada 
+	  {\em Gripe Espanhola} no começo do século passado.
+      \item A razão é que hoje o mundo está muito mais conectado.
+      \item O {\em outsourcing} -- uso de fornecedores externos de serviços e
+	  bens materiais -- está muito 
+	  mais amplo do que em qualquer época da humanidade
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Metas para esta apresentação}
+  \begin{itemize}
+      \item A pandemia da COVID-19 tem efeitos muito complexos na sociedade.
+      \item Uma primeira forma de abordá-la é entender a velocidade de sua 
+	  propagação.
+      \item Tanto para compreender a história de sua evolução;
+      \item Como para tentar prever seu futuro impacto, para que se possam
+	  elaborar políticas mais eficazes para contê-la.
+	  
+      \item Neste pequeno vídeo falaremos de alguns modelos matemáticos simples
+	  que podem ajudar a compreender o passado e a prever o futuro.
+      \item Para isso usaremos o software chamado $R$, que tem sido considerado
+	  um dos mais completos para estatística.
+      \item O plano, então, é tanto refletir sobre COVID-19, quanto aprender 
+	  a usar $R$.
+  \end{itemize}
+
+\end{frame}
+
+\section{Coletando dados de COVID-19}
+
+\begin{frame}{Fontes de dados da COVID-19 no Brasil}
+    \begin{itemize}
+	\item No Brasil, os dados de contaminação da COVID-19 tem sido coletados
+	    pelas prefeituras, concentrados pelos governadores dos estados 
+	    e finalmente agregados pelo Ministério da Saúde.
+	\item Mas, na prática, os dados do Brail tem sido obtidos a partir da 
+	    página de instituto especializado da Universidade John Hopkins, 
+ 	    dos EUA.
+	\item Esta página coleta dados de todo o mundo, e tem recursos para
+	    comparar diferentes progressões das epidemias no mundo.
+	 \item E tem ferramentas de software para realizar algumas operações 
+	     matemáticas sobre os dados.
+    \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{A página de onde são coletados os dados}
+  \begin{itemize}
+      \item A
+  \end{itemize}
+
+\end{frame}
+
+\section{Aproximação por regressão linear}
+
+\begin{frame}{A regressão linear para aproximar funções a dados empíricos}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Falha da regressão linear para aproximar os dados de COVID-19}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+
+\section{Modelo geral de epidemias}
+
+\begin{frame}{Como é realizado o contágio, em uma epidemia ?}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\section{A transformação {\em log-log}}
+
+\begin{frame}{Sobre a transformação {\em log-log}}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Por que a transformação {\em log-log} ajuda neste caso ?}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\section{Aproximação de um modelo exponencial aos dados de COVID-19 do Brasil}
+
+\begin{frame}{O novo modelo, sob {\em log-log}}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Inversão da transformação {\em log-log}}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\section{Interpretação do modelo exponencial aos dados de COVID-19 do Brasil}
+
+\begin{frame}{Avaliação da qualidade do modelo aproximado}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Interpolação versus extrapolação}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Algumas previsões}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Limites desta análise}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\section{Apresentação dos recursos do 
+	  \texorpdfstring{$R$}{R} 
+	  que foram usados}
+
+\begin{frame}{Depois do uso das ferramentas, sua compreensão}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\subsection{Leitura de dados}
+
+\begin{frame}{Arquivos de dados e {\em dataframes}}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Variáveis obtidas do conjunto de dados}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\subsection{Transformação de variáveis}
+
+\begin{frame}{Variáveis transformadas}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Em $R$ (quase) tudo é uma lista}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\subsection{Recursos matemáticos disponíveis}
+
+\begin{frame}{O $R$ é uma biblioteca de matemática}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Funções e algoritmos estatísticos}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\subsection{Análise do resultado das regressões}
+
+\begin{frame}{Dois parâmetros importantes}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\subsection{Recursos de representação gráfica dos dados}
+
+\begin{frame}{Representação de funções de uma varíável}
+    \begin{itemize}
+	\item a
+    \end{itemize}
+
+\end{frame}
+
+\end{document}
